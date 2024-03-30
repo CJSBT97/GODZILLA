@@ -1,0 +1,283 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-color: rgb(2,3,34);
+    height: 100%;
+    width: 100%;
+    font-size: 500%; 
+    font-family: 'PoppinsMedium';
+    /* 1rem = 80 */
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'PoppinsMedium';
+    src: url('~@/assets/font/Poppins-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PoppinsExtraLight';
+    src: url('~@/assets/font/Poppins-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MontserratBold';
+    src: url('~@/assets/font/Montserrat-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'BlackItalic';
+    src: url('~@/assets/font/Montserrat-BlackItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'AvenirRoman';
+    src: url('~@/assets/font/Avenir-Roman.otf');
+}
+
+@font-face {
+    font-family: 'UnboundedMedium';
+    src: url('~@/assets/font/Unbounded-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'rocgrotesk500';
+    src: url('~@/assets/font/roc-grotesk-500.otf');
+}
+@font-face {
+    font-family: 'MontserratRegular';
+    src: url('~@/assets/font/Montserrat-Regular.ttf') format('truetype');
+}
+
+
+
+@font-face {
+    font-family: 'AlibabaSansRegular';
+    src: url('~@/assets/font/AlibabaSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'AlibabaSansMedium';
+    src: url('~@/assets/font/AlibabaSans-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'AlibabaSansBold';
+    src: url('~@/assets/font/AlibabaSans-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'AlibabaSansLight';
+    src: url('~@/assets/font/AlibabaSans-Light.ttf') format('truetype');
+}
+
+
+
+
+
+/* 公共框 */
+.marginBox {
+    padding-left: 10%;
+    padding-right: 10%;
+    box-sizing: border-box;
+}
+
+.UpDownBox {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* 头部 start */
+header {
+    position: relative;
+    background-color: rgb(22,35,72);
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+}
+
+.logo {
+    overflow: hidden;
+    width: 2.675rem;
+    height: .65rem;
+}
+
+img {
+    width: 100%;
+    vertical-align: top;
+}
+
+nav {
+    display: flex;
+    width: 40%;
+    font-size: .225rem;
+}
+
+nav > .el-button{
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    color: #8B8F9F ;
+    font-family: 'PoppinsMedium';
+    font-size: .225rem;
+}
+
+nav > .el-button:hover {
+    color: #00EAFF;
+}
+
+/* 当前选中导航 */
+.clickA {
+    color: #00EAFF!important;
+}
+
+.login {
+    width: 3rem;
+}
+
+.language {
+    overflow: hidden;
+    height: .3125rem;
+    width: .3125rem;
+}
+
+.loginButtom {
+    width: 2rem;
+    height: .575rem;
+    text-align: center;
+    line-height: .575rem;
+    font-size: .2rem;
+    background-color: #18dcff;
+    border-radius: 60px;
+}
+
+.banner {
+    position: relative;
+}
+
+footer {
+    height: 1.25rem;
+    line-height: 1.25rem;
+    text-align: center;
+    font-size: .2rem;
+    color: #9B9BA1;
+    border-top: 2px solid #474747;;
+}
+
+.menuIcon {
+    display: none;
+    width: .4625rem;
+    height: .4625rem;
+}
+
+.menu {
+    display: none;
+    padding: 1% 10%;
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 99;
+    font-size: 16px;
+    background-color: RGBA(21, 20, 28, 0.8);
+}
+
+.menu li {
+    padding: 10px 0;
+}
+.menu li a {
+    width: 30%;
+    border-bottom: 1px solid RGBA(129, 129, 134, 1);
+    color: #fff;
+}
+
+.menuLogin {
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#get-top {
+    position: fixed;
+    right: 1%;
+    bottom: 5%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+#get-top img {
+    width: 100%;
+}
+
+/* 头部 end */
+
+@media screen and (min-width: 734px) and (max-width: 1024px) {
+    html {
+        font-size: 300%;
+    }
+    /* nav, .login {
+        display: none;
+    }
+    .menuIcon {
+        display: block;
+    } */
+    /* .loginButtom {
+        width: 2rem;
+        height: 0.675rem;
+        text-align: center;
+        line-height: .675rem;
+        font-size: .4rem;
+        background-color: #18dcff;
+        border-radius: 60px;
+    }
+    #get-top {
+        width: 25px;
+        height: 25px;
+    } */
+}
+@media screen and (min-width: 325px) and (max-width: 733px) {
+    html {
+        font-size: 250%;
+    }
+    /* nav, .login {
+        display: none;
+    }
+    .menuIcon {
+        display: block;
+    } */
+    /* .loginButtom {
+        width: 2rem;
+        height: 0.675rem;
+        text-align: center;
+        line-height: .675rem;
+        font-size: .3rem;
+        background-color: #18dcff;
+        border-radius: 60px;
+    }
+    #get-top {
+        width: 25px;
+        height: 25px;
+    } */
+    .marginBox {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
